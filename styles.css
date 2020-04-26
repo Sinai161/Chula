@@ -1,0 +1,214 @@
+  /* Css Remminders   
+  1 background -- changes color of background
+  2 border-radius -- changes sharp corners to round corners
+  3 border -- 0 removes the border, to add you can do 1px solid red
+  4 font-size -- changes the size of the text
+  5 color -- changes the color of the text
+  6 padding -- adds space inside the box
+  7 text-decoration -- adds or removes decorations on text like udnerlines
+  8 margin -- adds space outside of the box
+  9 font-weight -- thickness of letters
+  10 " * " -- selects everything on the page
+  11 "nav" is where we put our links
+  12 Flex: displays the container left to right - can be changed to be other directions
+  13 Justify content: Tells the content where to be placed horizontally - Example: Center, top, bottom
+  14 Align-items: Tells the content where to be place vertically
+  15 flex-flow: pics direction and to wrap or nowrap, example: row wrap or row nowrap
+  16 text-align: Aligns the text left, center, or right 
+*/
+/* 
+#B74F6F - Rose
+#97F9F9 - Waterspout
+#34E5FF - Turquoise
+#B10F2E - crimson
+#A0DDE6 - non-photo blue
+*/
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background: #97f9f9;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+}
+.button {
+  background: yellow; 
+  border-radius: 15px;
+  border: 0;
+  font-size: 1.6em;
+  color: black;
+  padding: 10px 22px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: #34E5FF;
+  transition: all 0.2s ease;
+}
+
+.link {
+    color: #B74F6F;
+    text-decoration: none; 
+    margin: 0 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.selected {
+  color: #b10f2e;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.logo{
+    width: auto;
+    height: 100px;
+}
+
+/* Main styles */
+.main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  width: 100%;
+}
+
+.main-left {
+  padding: 20px;
+}
+
+.main-right{
+  margin: 20px;
+  text-align: center;
+  height: 100%;
+}
+
+.main-title{
+  font-size: 40px;
+  margin-bottom: 80px;
+}
+.main-picture {
+  height: 300px;
+  width: auto;
+  border-radius: 100%;
+}
+
+.main-button {
+  background: #A0DDE6;
+  border: 2px solid #fff;
+  transition: all 0.2s ease; /* selects "all" time you want it to take: "0.2seconds" Effect: "ease" */
+  align-self: flex-end;
+}
+/* end Main */
+
+.gallery {
+  display: flex;
+  flex-flow:row wrap;
+  max-width: 90%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.chula-pic{
+  height: 300px;
+  width: auto;
+  margin: 30px 15px 10px;
+  border: 1px solid white;
+}
+
+.family{
+  margin: 50px;
+}
+
+.family-title {
+  text-align: center;
+  font-size: 30px;
+}
+
+.family-profile{
+  display: flex;
+  margin: 40px auto;
+  flex-flow: column wrap;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  max-width: 1200px;
+}
+
+.family-pic{
+  box-shadow: 10px 5px 5px 0px rgba(0,0,0,0.3);
+  height: auto;
+  width: 300px;
+  border-radius: 25px;
+}
+
+.text{
+  padding: 25px;
+  max-width: 1000px;
+}
+
+.favorite-toys{
+  text-align: center;
+}
+
+
+.favorite-toy{
+  max-width: 1200px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.main-toy{
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.68);
+  border-radius: 20px;
+}
+
+.toy-content{
+text-align: center;
+padding: 0 15px;
+}
+
+.toy-gallery{
+  max-width: 1200px;
+  padding: 25px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0px auto;
+}
+
+.toy-pic{
+  border-radius: 20px;
+  width: 250px;
+  height: auto;
+}
+
+.info{
+  background-color: #A0DDE6;
+  width: 100%;
+  margin-bottom: 0;
+  justify-content: space-around;
+  display: flex;
+}
+
+.subtitle{
+  font-size: 36px;
+}
